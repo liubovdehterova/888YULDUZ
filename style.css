@@ -43,6 +43,12 @@ p {
     color: #ffffff;
 }
 
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .container {
     max-width: 1320px;
     margin: 0 auto;
@@ -1071,6 +1077,39 @@ h5.sub-title {
     border: none;
 }
 
+.scrollToTop {
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: #571ce0;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 45px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 9;
+    cursor: pointer;
+    transition: all 1s;
+    transform: translateY(100%);
+}
+
+.scrollToTop.active {
+    bottom: 30px;
+    transform: translateY(0);
+}
+@media only screen and (max-width: 1400px) {
+    .col-xl-4 {
+        width: 30%;
+    }
+    .row {
+        justify-content: center;
+    }
+    .align-items-center {
+        justify-content: center;
+    }
+}
 @media only screen and (max-width: 1250px) {
     .container {
         max-width: 960px;
@@ -1499,6 +1538,7 @@ h5.sub-title {
         font-size: 15px;
         line-height: 19px;
     }
+
     h5.sub-title {
         margin-bottom: 25px;
         font-size: 18px;
@@ -1508,20 +1548,24 @@ h5.sub-title {
         text-transform: none;
         transition: all .3s;
     }
+
     h2.title {
         font-size: 30px;
         line-height: 36px;
         margin-top: -7px;
     }
+
     p,
     .text-area .text-area-p {
         font-size: 15px;
         line-height: 19px;
         font-weight: 400;
     }
+
     .row .col-lg-6 {
         padding: 0;
     }
+
     .col-sm-6 {
         flex: 0 0 auto;
         width: 50%;
@@ -1529,24 +1573,30 @@ h5.sub-title {
         padding-left: calc(0.5rem * .5);
         box-sizing: border-box;
     }
+
     .col-lg-8 {
         flex: 0 0 auto;
         width: 100%;
     }
+
     .faqs-section .accordion .accordion-item .accordion-header:after {
         display: none;
     }
+
     .faqs-section .accordion .accordion-item .accordion-button {
         padding-left: 20px;
     }
+
     .col-xl-10 {
         flex: 0 0 auto;
         width: 100%;
     }
+
     .footer-section {
         position: relative;
         background-image: unset;
     }
+
     .footer-section:before {
         content: "";
         width: 100%;
@@ -1556,12 +1606,15 @@ h5.sub-title {
         position: absolute;
         z-index: -1;
     }
+
     .pt-120 {
         padding-top: 50px;
     }
+
     .footer-section {
         margin-top: 0;
     }
+
     .amazing-features {
         margin: 0;
     }
@@ -1571,9 +1624,11 @@ h5.sub-title {
     .slick-slide:nth-child(2) {
         display: none;
     }
+
     .slick-slide {
         width: 430px !important;
     }
+
     .footer-section .menu-item {
         display: grid;
         justify-content: center;
@@ -1585,9 +1640,11 @@ h5.sub-title {
     .about-bitbetio .col-6, .leave-comments .col-6 {
         width: 100%;
     }
+
     .how-it-works .main-content ul li h5 .image-area {
         width: 20%;
     }
+
     .how-it-works .main-content ul li h5 {
         padding-left: 15px;
     }

@@ -1,8 +1,15 @@
 let scrollpos = window.scrollY
-const header = document.querySelector(".header")
+const header = document.querySelector(".header");
+const topScroll = document.querySelector('.scrollToTop');
 const scrollChange = 10;
-const addClassOnScroll = () => header.classList.add("header-fixed");
-const removeClassOnScroll = () => header.classList.remove("header-fixed");
+const addClassOnScroll = () => {
+    header.classList.add("header-fixed");
+    topScroll.classList.add("active");
+}
+const removeClassOnScroll = () => {
+    header.classList.remove("header-fixed");
+    topScroll.classList.remove("active");
+}
 window.addEventListener('scroll', function() {
     scrollpos = window.scrollY;
 
@@ -13,6 +20,18 @@ window.addEventListener('scroll', function() {
         removeClassOnScroll()
     }
 });
+
+let t;
+function up() {
+    const top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+    if(top > 0) {
+        window.scrollBy(0,-100);
+        t = setTimeout('up()',20);
+    } else clearTimeout(t);
+    return false;
+}
+topScroll.addEventListener('click', up);
+
 
 const elemClassList = document.querySelectorAll('.nav-link-click');
 for (let elem of elemClassList) {
