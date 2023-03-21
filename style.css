@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Nunito Sans", sans-serif;
     background-color: #120f54;;
@@ -22,9 +26,21 @@ a {
     text-decoration: none;
 }
 
+h5 {
+    margin: 0;
+    color: #ffffff;
+}
+
 img {
     max-width: 100%;
     height: auto;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
 }
 
 .container {
@@ -39,22 +55,24 @@ img {
     width: 100%;
     z-index: 999;
 }
+
 .header.header-fixed {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
-    box-shadow: 0 3px 10px 0 rgba(0,0,0,.3);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .3);
     background-color: #2d0572;
     animation-name: fadeInDown;
     animation-duration: 1s;
     animation-fill-mode: both;
 }
+
 @keyframes fadeInDown {
     0% {
         opacity: 0;
-        transform: translate3d(0,-100%,0);
+        transform: translate3d(0, -100%, 0);
     }
 
     100% {
@@ -62,6 +80,7 @@ img {
         transform: none;
     }
 }
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -101,12 +120,24 @@ img {
     color: #fe8f9c;
     transition: .3s;
 }
+
+.navbar-collapse {
+    display: flex;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .header__inner__btn__item {
     padding: 10px 30px;
 }
+
 .header__inner__btn__item__link {
     color: #ffffff;
 }
+
 .sing {
     margin-left: 15px;
     font-weight: 600;
@@ -202,6 +233,7 @@ img {
     visibility: visible;
     top: 30px;
 }
+
 .sub-menu {
     visibility: hidden;
     position: absolute;
@@ -209,13 +241,16 @@ img {
     right: -60%;
     top: 0;
 }
+
 .sub-navbar {
     position: relative;
 }
+
 .sub-navbar:hover .sub-menu {
     opacity: 1;
     visibility: visible;
 }
+
 .sub-navbar .sub-menu {
     margin-left: -30%;
 }
@@ -226,9 +261,9 @@ img {
 
 .banner-section .overlay {
     background-color: #1f2340;
-    background-image: url('./img/index-bg.png'),url('./img/banner-bg.png');
+    background-image: url('./img/index-bg.png'), url('./img/banner-bg.png');
     background-repeat: no-repeat;
-    background-position: top 260px right 10px,top 200px right 0;
+    background-position: top 260px right 10px, top 200px right 0;
     position: relative;
     background-size: auto;
 }
@@ -255,25 +290,26 @@ img {
     }
 
     33% {
-        transform: translate(-5px,-5px);
+        transform: translate(-5px, -5px);
     }
     66% {
-        transform: translate(5px,5px);
+        transform: translate(5px, 5px);
     }
     100% {
         transform: translate(0);
     }
 }
+
 @keyframes rippleAni {
     0% {
         transform: translate(0);
     }
 
     33% {
-        transform: translate(5px,-5px);
+        transform: translate(5px, -5px);
     }
     66% {
-        transform: translate(-5px,5px);
+        transform: translate(-5px, 5px);
     }
     100% {
         transform: translate(0);
@@ -283,12 +319,15 @@ img {
 .banner-section .overlay .banner-content {
     padding: 328px 0 360px;
 }
+
 .banner-section .overlay .banner-content .container {
     position: relative;
 }
+
 .banner-section .overlay .banner-content .container .content-shape img {
     position: absolute;
 }
+
 .banner-section .overlay .banner-content .container .content-shape .obj-1 {
     left: 20%;
     top: -40%;
@@ -303,22 +342,26 @@ img {
         transform: rotate(1turn);
     }
 }
+
 .banner-section .overlay .banner-content .container .content-shape .obj-2 {
     left: 15%;
     bottom: -30%;
     animation: ripple2Ani 5s linear infinite;
 }
+
 .banner-section .overlay .banner-content .container .content-shape .obj-3 {
     left: 40%;
     bottom: -15%;
     animation: rippleAni 5s linear infinite;
 }
+
 .banner-section .overlay .banner-content .container .content-shape .obj-4 {
     left: 25%;
     bottom: -55%;
     animation: spin 30s linear infinite;
 }
-.row>* {
+
+.row > * {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
@@ -326,19 +369,24 @@ img {
     padding-left: calc(1.5rem * .5);
     margin-top: 0;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
     margin-right: calc(-.5 * 1.5rem);
     margin-left: calc(-.5 * 1.5rem);
 }
+
 .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
+    box-sizing: border-box;
 }
+
 .section-text {
     margin-bottom: 34px;
 }
+
 .sub-title {
     color: #41cd7d;
     margin-bottom: 25px;
@@ -346,6 +394,7 @@ img {
     line-height: 41.6px;
     margin-top: -8px;
 }
+
 .title {
     font-weight: 700;
     margin-bottom: 14px;
@@ -354,10 +403,12 @@ img {
     margin-top: -20px;
     color: #ffffff;
 }
+
 .xlr, .xxlr {
     line-height: 36px;
     margin-top: -7px;
 }
+
 .xlr {
     font-size: 24px;
     margin: 0;
@@ -367,12 +418,14 @@ img {
 .bottom-area .sing {
     margin: 0;
 }
+
 .counter-section {
     position: relative;
     padding: 40px 0 30px;
     margin-top: -105px;
     transform: translateZ(10px);
 }
+
 .counter-section:before {
     position: absolute;
     content: "";
@@ -421,6 +474,1121 @@ img {
     line-height: 30px
 }
 
-.cus-mar>* {
+.cus-mar > * {
     padding: 0;
+}
+
+.about-bitbetio .overlay {
+    position: relative;
+}
+
+.pb-120 {
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.about-bitbetio .overlay .shape-area img {
+    position: absolute;
+}
+
+.about-bitbetio .overlay .shape-area .obj-1 {
+    right: 4%;
+    top: 15%;
+    animation: rippleAni 5s linear infinite;
+}
+
+.about-bitbetio .overlay .shape-area .obj-2 {
+    right: 8%;
+    bottom: 30%;
+    animation: ripple2Ani 5s linear infinite;
+}
+
+h2.title {
+    font-size: 57px;
+    line-height: 74.1px;
+    margin-top: -16px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+h5.sub-title {
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 31.2px;
+    margin-top: -6px;
+    font-weight: 600;
+    text-transform: none;
+    transition: all .3s;
+}
+
+.about-bitbetio .cus-mar {
+    margin-bottom: -20px;
+}
+
+.col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    padding-right: calc(1.5rem * .5);
+    padding-left: calc(1.5rem * .5);
+    box-sizing: border-box;
+}
+
+.about-bitbetio .single-item {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 40px 0 35px;
+    border: 1px solid #8790ae;
+    border-radius: 20px;
+}
+
+.about-bitbetio .single-item h5 {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 31.2px;
+    color: #ffffff;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.max-un {
+    max-width: unset;
+}
+
+.d-rtl {
+    direction: rtl;
+}
+
+.how-it-works {
+    position: relative;
+}
+
+.how-it-works:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-image: url('./img/how-works-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-header {
+    margin-bottom: 55px;
+}
+
+.pt-120 {
+    padding-top: 120px;
+}
+
+.how-it-works .main-content {
+    position: relative;
+    padding: 66px 0 60px;
+}
+
+.how-it-works .main-content:before {
+    position: absolute;
+    content: "";
+    width: 120%;
+    background: #291b6b;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .15);
+    border-radius: 30px;
+    height: 100%;
+    top: 0;
+    left: -10%;
+    z-index: -1;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.col-lg-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+
+.how-it-works .main-content ul {
+    margin-bottom: -30px;
+}
+
+.how-it-works .main-content ul li {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.how-it-works .main-content ul li h5.active {
+    background: #5025b4;
+    box-shadow: 0 4px 25px #5025b4;
+    border-radius: 5px;
+}
+
+.how-it-works .main-content ul li h5 .image-area {
+    margin-right: 20px;
+}
+
+.nav {
+    flex-wrap: wrap;
+}
+
+.how-it-works .main-content ul li h5 {
+    display: inline-flex;
+    align-items: center;
+    background: #38268f;
+    border-radius: 5px;
+    width: 100%;
+    padding: 7px 30px;
+}
+
+.how-it-works .main-content .tab-content {
+    background: #120f54;
+    border-radius: 20px;
+    text-align: center;
+    padding: 27px 30px 30px;
+}
+
+.fade {
+    transition: opacity .15s linear;
+}
+
+.tab-content > .tab-pane {
+    display: none;
+}
+
+.tab-content > .active {
+    display: block;
+}
+
+.how-it-works .main-content .tab-content h4 {
+    margin: -4px 0 24px;
+    font-size: 32px;
+    line-height: 41.6px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: none;
+    transition: all .3s;
+}
+
+.amazing-features {
+    position: relative;
+    margin: 120px 0;
+}
+
+.amazing-features:before {
+    background-image: url('./img/amazing-features-bg.png');
+    z-index: -2;
+}
+
+.amazing-features:after, .amazing-features:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.slick-slider {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list, .slick-slider {
+    position: relative;
+    display: block;
+}
+
+.slick-slider .slick-list, .slick-slider .slick-track {
+    transform: translateZ(0);
+}
+
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-slide {
+    display: block;
+    height: 100%;
+    min-height: 1px;
+}
+
+.amazing-features .single-slide .slide-content {
+    background: #120f54;
+    border: 1px solid #8790ae;
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 40px 0 34px;
+    text-align: center;
+}
+
+.amazing-features:after {
+    background-image: url('./img/amazing-features-circle.png');
+    top: 0;
+    z-index: -1;
+}
+
+.order-lg-0 {
+    order: 0;
+}
+
+.more-features .content-area {
+    margin-bottom: -40px;
+}
+
+.more-features .content-area .single-item {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.more-features .content-area .single-item .image-area img {
+    max-width: none;
+}
+
+.more-features .content-area .single-item .text-area {
+    margin-left: 20px;
+}
+
+.text-area .text-area-p {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.text-area .text-area-title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 31.2px;
+    margin-top: -6px;
+}
+
+.faqs-section {
+    position: relative;
+}
+
+.faqs-section:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-image: url('./img/faqs-bg.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 20px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.faqs-section .faq-bg {
+    position: relative;
+}
+
+.faqs-section .faq-bg:before {
+    position: absolute;
+    content: "";
+    width: 120%;
+    background: #291b6b;
+    border-radius: 20px;
+    height: 100%;
+    top: 0;
+    left: -10%;
+    z-index: -1;
+}
+
+.col-xl-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.accordion {
+    --bs-accordion-color: #212529;
+    --bs-accordion-bg: #fff;
+    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --bs-accordion-border-color: #dee2e6;
+    --bs-accordion-border-width: 1px;
+    --bs-accordion-border-radius: 0.375rem;
+    --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
+    --bs-accordion-btn-padding-x: 1.25rem;
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-btn-color: #212529;
+    --bs-accordion-btn-bg: var(--bs-accordion-bg);
+    --bs-accordion-btn-icon-width: 1.25rem;
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-focus-border-color: #86b7fe;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25);
+    --bs-accordion-body-padding-x: 1.25rem;
+    --bs-accordion-body-padding-y: 1rem;
+    --bs-accordion-active-color: #0c63e4;
+    --bs-accordion-active-bg: #e7f1ff;
+}
+
+.accordion-item {
+    color: var(--bs-accordion-color);
+}
+
+.faqs-section .accordion .accordion-item {
+    margin-bottom: 20px;
+    background: #3a2fa4;
+    box-shadow: 0 12px 24px rgba(47, 65, 129, .1);
+    border-radius: 10px;
+    border: none;
+}
+
+.accordion-header {
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+.faqs-section .accordion .accordion-item .accordion-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 1rem;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    background-color: var(--bs-accordion-btn-bg);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+}
+
+.faqs-section .accordion .accordion-item .accordion-button {
+    padding: 20px 20px 20px 70px;
+    background: #3a2fa4;
+    border-radius: 10px;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    border: none;
+}
+
+.faqs-section .accordion .accordion-item .accordion-button:before {
+    content: "";
+    position: absolute;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    background: #261c7e;
+    border-radius: 5px;
+}
+
+.accordion-button:after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.faqs-section .accordion .accordion-item .accordion-button:after {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-image: url('./icon/minus.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    position: absolute;
+    right: 30px;
+    transition: all .3s ease;
+}
+
+.faqs-section .accordion .accordion-item .accordion-button.collapsed:after {
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-image: url('./icon/plus.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    transform: rotate(-90deg);
+    transition: all .3s ease;
+}
+
+.faqs-section .accordion .accordion-item .accordion-header:after {
+    position: absolute;
+    left: 20px;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    content: "";
+    background-image: url('./icon/faq-icon.png');
+    background-repeat: no-repeat;
+}
+
+.faqs-section .accordion .accordion-item .accordion-collapse {
+    border: none;
+    display: none;
+}
+
+.faqs-section .accordion .accordion-item .accordion-collapse .accordion-body {
+    padding: 0 20px;
+}
+
+.faqs-section .accordion .accordion-item .accordion-collapse .accordion-body p {
+    padding: 20px 0;
+    border-top: 1px solid #b0baf1;
+}
+
+.col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+
+.footer-section {
+    background-image: url('./img/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-top: 120px;
+}
+
+.col-xl-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.footer-section .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section .menu-item .footer-link {
+    display: flex;
+}
+
+.footer-section .menu-item .footer-link li {
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 1px solid #7876d5;
+}
+
+.footer-section .menu-item .footer-link li a {
+    color: #ffffff;
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.footer-section .copyright {
+    margin-top: 30px;
+    padding: 30px 0;
+    border-top: 1px solid #857fc7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-section .copyright .copy-area a {
+    color: #41cd7d;
+}
+
+.footer-section .copyright .copy-area .auth {
+    color: #ff96a5;
+}
+
+.footer-section .copyright .social-link a {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #5653a8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    transition: .3s;
+}
+
+.footer-section .copyright .social-link a svg {
+    color: #5ac4ff;
+    transition: .3s;
+}
+
+.footer-section .menu-item .footer-link li:last-child {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+@media only screen and (max-width: 1250px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .nav {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .header__inner__btn__item {
+        display: none;
+    }
+
+    .header__inner__btn__item.sing {
+        display: inline-block;
+    }
+
+    .header__inner__btn__item {
+        padding: 5px 15px;
+    }
+
+    .sing {
+        margin-left: 12px;
+        font-weight: 400;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .banner-section .overlay {
+        background-size: 45%, 80%;
+    }
+
+    .content-shape {
+        display: none;
+    }
+
+    .banner-section .overlay .banner-content {
+        padding: 220px 0 230px;
+    }
+
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .title {
+        font-size: 57px;
+        line-height: 74.1px;
+        margin-top: -16px;
+        margin-bottom: 14px;
+    }
+
+    .bottom-area {
+        display: inline-block;
+        border: 1px solid #571ce0;
+        border-radius: 30px;
+        padding: 6px;
+    }
+
+    .m-none {
+        font-size: 36px;
+    }
+
+    .counter-section .img-area {
+        width: 33%;
+    }
+
+    .about-bitbetio .single-item h5 {
+        font-size: 18px;
+    }
+
+    h2.title {
+        font-size: 38px;
+    }
+
+    h5.sub-title {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .how-it-works .main-content ul li h5 {
+        box-sizing: border-box;
+    }
+
+    .how-it-works .main-content ul li {
+        margin-bottom: 10px;
+    }
+
+    .amazing-features {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .header {
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .3);
+        background-color: #2d0572;
+    }
+
+    .header .navbar-toggler {
+        display: inline-block;
+        padding-right: 0;
+        color: #fe8f9c;
+        background: none;
+        border: none;
+    }
+
+    .header__inner {
+        display: block;
+    }
+
+    .navbar-collapse {
+        justify-content: space-between;
+    }
+
+    .header__inner__btn__item {
+        display: block;
+    }
+
+    .flex {
+        display: none;
+        animation-name: fadeInDown;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: inline-block;
+        margin-left: 130px;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+
+    .nav-item:hover .dropdown-menu {
+        display: inline-block;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border-radius: 0.375rem;
+        transition: box-shadow 0.15s ease-in-out;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+    .banner-section .overlay {
+        background-size: 0, 60%;
+    }
+
+    .col-md-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
+
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .counter-section .single-area {
+        margin-bottom: 30px;
+    }
+
+    .counter-section .single-area .img-area {
+        width: 25%;
+    }
+
+    .m-none {
+        font-size: 32px;
+        line-height: 38.4px;
+        margin: 0;
+    }
+
+    .text-area p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .pb-120 {
+        padding-bottom: 60px;
+    }
+
+    .pt-120 {
+        padding-top: 60px;
+    }
+
+    .about-bitbetio .overlay .shape-area {
+        display: none;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .about-bitbetio .single-item {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 40px 0 35px;
+    }
+
+    .about-bitbetio .left-side {
+        display: none;
+    }
+
+    .col-lg-6,
+    .col-lg-5 {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .how-it-works .main-content ul li {
+        width: 100%;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+
+    .how-it-works .main-content ul {
+        margin-bottom: 10px;
+    }
+
+    .slick-slide:last-child {
+        display: none;
+    }
+
+    .order-1 {
+        order: 1;
+    }
+
+    .more-features .img-area {
+        width: 60%;
+        padding-top: 40px;
+        margin: auto;
+    }
+
+    h2.title {
+        font-size: 43px;
+        line-height: 51.6px;
+        margin-top: -10px;
+    }
+
+    .col-lg-7 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .banner-section .overlay {
+        background-size: 0, 0;
+    }
+
+    .banner-section .overlay .banner-content {
+        padding: 200px 0 190px;
+    }
+
+    .counter-section:before {
+        width: 94%;
+        left: 3%;
+    }
+
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .counter-section .single-area .img-area {
+        width: 20%;
+    }
+
+    .about-bitbetio .single-item img, .amazing-features .single-slide .slide-content img {
+        width: 40%;
+    }
+
+    .about-bitbetio .single-item h5 {
+        margin-top: 30px;
+    }
+
+    .how-it-works:before {
+        width: 100%;
+        background-color: #0d102f;
+        background-image: unset;
+        height: 60%;
+    }
+
+    .slick-slide:nth-child(3) {
+        display: none;
+    }
+
+    .amazing-features:after {
+        background-image: unset;
+    }
+
+    .amazing-features:before {
+        background-size: 175% 74%;
+    }
+
+    .faqs-section .accordion .accordion-item .accordion-button {
+        padding-right: 60px;
+    }
+
+    .faqs-section .accordion .accordion-item .accordion-header {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: none;
+        transition: all .3s;
+    }
+
+    .footer-section .copyright {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-section .copyright .copy-area {
+        order: 1;
+    }
+
+    .footer-section .copyright .social-link {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-section .menu-item .footer-link li a {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .footer-section .menu-item .footer-link li {
+        padding-right: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .sub-title {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: -4px
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+        padding-right: calc(1.5rem * .5);
+        padding-left: calc(1.5rem * .5);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 46px;
+        margin-top: -9px;
+        margin-bottom: 15px;
+    }
+
+    .xlr {
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+
+    .header__inner__btn__item__link {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .counter-section {
+        position: relative;
+        padding: 40px 0 30px;
+        margin-top: -105px;
+        transform: translateZ(10px);
+    }
+
+    .counter-section {
+        padding: 40px 30px 30px;
+    }
+
+    .counter-section .single-area .img-area {
+        width: 20%;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .m-none {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .text-area p {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    h5.sub-title {
+        margin-bottom: 25px;
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: -4px;
+        font-weight: 600;
+        text-transform: none;
+        transition: all .3s;
+    }
+    h2.title {
+        font-size: 30px;
+        line-height: 36px;
+        margin-top: -7px;
+    }
+    p,
+    .text-area .text-area-p {
+        font-size: 15px;
+        line-height: 19px;
+        font-weight: 400;
+    }
+    .row .col-lg-6 {
+        padding: 0;
+    }
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+        padding-right: calc(0.5rem * .5);
+        padding-left: calc(0.5rem * .5);
+        box-sizing: border-box;
+    }
+    .col-lg-8 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .faqs-section .accordion .accordion-item .accordion-header:after {
+        display: none;
+    }
+    .faqs-section .accordion .accordion-item .accordion-button {
+        padding-left: 20px;
+    }
+    .col-xl-10 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .footer-section {
+        position: relative;
+        background-image: unset;
+    }
+    .footer-section:before {
+        content: "";
+        width: 100%;
+        height: 85%;
+        bottom: 0;
+        background-color: #291b6b;
+        position: absolute;
+        z-index: -1;
+    }
+    .pt-120 {
+        padding-top: 50px;
+    }
+    .footer-section {
+        margin-top: 0;
+    }
+    .amazing-features {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .slick-slide:nth-child(2) {
+        display: none;
+    }
+    .slick-slide {
+        width: 430px !important;
+    }
+    .footer-section .menu-item {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .about-bitbetio .col-6, .leave-comments .col-6 {
+        width: 100%;
+    }
+    .how-it-works .main-content ul li h5 .image-area {
+        width: 20%;
+    }
+    .how-it-works .main-content ul li h5 {
+        padding-left: 15px;
+    }
 }
